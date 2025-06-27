@@ -1,0 +1,16 @@
+create schema call_center;
+use call_center;
+create table call_centrer_semestre as
+select * from jan
+union all 
+select * from feb
+union all
+select * from mar
+union all
+select * from april
+union all
+select * from may
+union all 
+select * from june;
+select * FROM call_center_semestre;
+SELECT COUNT(*) FROM call_center_semestre;
